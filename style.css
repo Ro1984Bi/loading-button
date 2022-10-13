@@ -1,0 +1,51 @@
+#search {
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(219, 18, 58);
+    color: white;
+    font-family: 'Trebuchet MS',  Arial, sans-serif ;
+    font-weight: 900;
+    font-size: 20px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search:hover {
+    background-color: rgb(255, 68, 99);
+}
+
+#search:active {
+    background-color: rgb(153, 21, 47);
+}
+
+#search .load {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid rgba(0,0,0, 0.2);
+    border-right-color: white;
+    animation: loading-animation 2s linear infinite;
+}
+
+#search h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#search .load * {
+    display: none;
+}
+
+@keyframes loading-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
